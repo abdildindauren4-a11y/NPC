@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+</head>
+<body>
+    <h1>Welcome to the Quiz Game!</h1>
+    <form id="quiz">
+        <div>
+            <label for="question1">1. What is the capital of France?</label><br>
+            <input type="radio" name="question1" value="a"> A) Paris<br>
+            <input type="radio" name="question1" value="b"> B) London<br>
+            <input type="radio" name="question1" value="c"> C) Rome<br>
+        </div>
+        <div>
+            <label for="question2">2. What is 2 + 2?</label><br>
+            <input type="radio" name="question2" value="a"> A) 3<br>
+            <input type="radio" name="question2" value="b"> B) 4<br>
+            <input type="radio" name="question2" value="c"> C) 5<br>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        document.getElementById('quiz').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Quiz submitted!');
+        });
+    </script>
+</body>
+</html>
